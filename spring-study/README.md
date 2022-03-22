@@ -5,3 +5,5 @@ spring-study
     * basic java example in chaper 2
 * chapter2-example2
     * fist example using spring module with gradle
+* chapter2-example3
+    * annotation version of chapter2-example2
