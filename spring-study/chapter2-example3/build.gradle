@@ -35,3 +35,8 @@ jar {
     archiveBaseName = 'chapter2-example3'
     archiveVersion =  '0.0.1'
 }
+
+test {
+    useJUnitPlatform()
+    useJUnit()
+}

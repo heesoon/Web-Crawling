@@ -5,7 +5,7 @@ public class StandardOutMessageRenderer implements MessageRenderer {
     private MessageProvider messageProvider;
 
     public StandardOutMessageRenderer(){
-        System.out.println(" --> StandardOutMessageRenderer: 생성자가 호출됨");
+        System.out.println(" --> StandardOutMessageRenderer() called");
     }
 
     @Override
@@ -13,14 +13,14 @@ public class StandardOutMessageRenderer implements MessageRenderer {
         if (messageProvider == null) {
             throw new RuntimeException(
                     StandardOutMessageRenderer.class.getName() 
-                    + " 클래스의 messageProvider 프로퍼티를 설정해야 합니다.");
+                    + " messageProvider class properties setted");
         }
         System.out.println(messageProvider.getMessage());
     }
 
     @Override
     public void setMessageProvider(MessageProvider provider) {
-        System.out.println(" --> StandardOutMessageRenderer: messageProvider 설정");
+        System.out.println(" --> StandardOutMessageRenderer: messageProvider setting");
         this.messageProvider = provider;
     }
 
