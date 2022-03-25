@@ -7,3 +7,5 @@ spring-study
     * fist example using spring module with gradle
 * chapter2-example3
     * annotation version of chapter2-example2
+* chapter3
+    * chapter3 examples
