@@ -1,4 +1,4 @@
-DI(Dependency Injection) and IoC(Inversion of Control)
+<span style="color:yellow"> DI(Dependency Injection) and IoC(Inversion of Control) </span>
 =============================================================================================
 
 이 장에서 정리해야 할 사항은 아래와 같은 것 같다.
@@ -15,12 +15,12 @@ DI(Dependency Injection) and IoC(Inversion of Control)
     * Based on XML                  
     * Based on Annotation             
 
-### 1. XML 기반 의존성 주입
+### <span style="color:yellow"> 1. XML 기반 의존성 주입 </span>
 <hr/>
 
 chapter2-example2 예제가 XML 기반의 의존성 주입 방식으로 XML 파일에 의존성과 관련된 정보를 bean 테그를 통해서 모두 기술해야 한다.
 
-### 2. Annotation 기반 의존성 주입
+### <span style="color:yellow"> 2. Annotation 기반 의존성 주입 </span>
 <hr/>
 
 XML 파일에 bean 관련 정보를 기술하는 대신 의존성과 관련된 클래스들에 annotation을 선언하고
@@ -37,3 +37,9 @@ XML 파일에 bean 관련 정보를 기술하는 대신 의존성과 관련된 �
     * 설정 클래스를 두고 이를 통해서 의존성 주입 : @Configuration              
     * @ConponentScan을 통해서 @Configuration을 좀 더 자동화할 수 있다.           
     * @ImportResource 를 통해서 XML과 @Configuration를 Mix할 수 있다.
+
+Lookup 메서드 주입 방식을 정리. 주입하려고 하는 대상이 prototype일 경우, 이 방식이 유효하다.
+의존성 주입을 통한 method overload도 이 주제와 관련되어 있다.
+
+* example3       
+    * @Scope("prototype")
