@@ -1,4 +1,4 @@
-Spring DI(Dependency Injection) and IoC(Inversion of Control)
+Chapter 3 : Spring DI(Dependency Injection) and IoC(Inversion of Control)
 =======================================================================================
 이 장에서 정리해야 할 사항은 아래와 같은 것 같다.
 
