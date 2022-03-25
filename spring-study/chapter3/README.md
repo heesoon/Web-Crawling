@@ -28,7 +28,7 @@ XML 파일에 bean 관련 정보를 기술하는 대신 의존성과 관련된 �
 
 라이브러리와 같이 코드를 수정할 수 없는 경우에 example2 방식은 유용하다.
 
-* example2
+* example2         
       * 설정 클래스를 두고 이를 통해서 의존성 주입 : @Configuration
       * @ConponentScan을 통해서 @Configuration을 좀 더 자동화할 수 있다.
       * @ImportResource 를 통해서 XML과 @Configuration를 Mix할 수 있다.
