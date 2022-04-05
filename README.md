@@ -1,7 +1,7 @@
-Java Spring
+Server Frameworks
 =======================================================================================
-Java Spring Studies and Personal Project
+Study and Practice of Server Frameworks
 
 ### spring-study folder
 ---------------------------------------------------------------------------------------
-"전문가를 위한 스프링 5 개정5판" 책에 대한 개인적인 정리
+"전문가를 위한 스프링 5 개정5판" 책 및 기타 Practice 정리
