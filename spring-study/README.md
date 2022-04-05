@@ -1,7 +1,6 @@
 Spring Study
 ==========================================================================================
-"전문가를 위한 스프링 5 개정5판" 책에 대한 개인적인 정리
-* chapter2
-    * chapter2 examples 정리
-* chapter3
-    * chapter3 examples 정리
+* spring-book
+    * "전문가를 위한 스프링 5 개정5판" 책에 대한 개인적인 정리
+* spring-io-practice
+    * spring.io 사이트 개인적인 정리
