@@ -1,6 +1,9 @@
 Web Frameworks
 =======================================================================================
-서버 관련 개인 정리 및 개발 코드 정리
+Web Framework 관련 개인 공부 및 프로젝트 정리
 
-* Server Side
-    * spring study 개인적인 정리
+* server-side
+    * server frameworks
+
+* client-side
+    * client frameworks
