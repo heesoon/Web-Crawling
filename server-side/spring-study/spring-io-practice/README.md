@@ -2,6 +2,10 @@ Spring Study (Spring IO Practice)
 ==========================================================================================
 Spring.io 사이트 참조, 개인 정리
 
+* accessingData-with-jpa
+    * basic jpa practice with H2 database
+    * https://spring.io/guides/gs/accessing-data-jpa/
+
 * restful-basic
     * basic restful api practice based on spring boot
     * without data base
