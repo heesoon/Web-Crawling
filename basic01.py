@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def main():
-    url = 'https://crawler-test.com/'
+    url = 'https://www.w3.org/standards/'
 
     response = requests.get(url)
     if response.status_code == 200:
@@ -50,6 +50,42 @@ def main():
     headings = soup.find_all(['h1', 'h2', 'p'])
     for heading in headings[:5]:
         print(f"{heading.name}: {heading.get_text()}")
+
+    # 6. 비디오 파일 URL 추출 및 다운로드 (video 태그 또는 a 태그에서 비디오 파일 링크 찾기)
+    print("\n Video Files:")
+    video_urls = []
+    for video in soup.find_all('video'):
+        sources = video.find_all('source')
+        for source in sources:
+            video_url = source.get('src')
+            if video_url:
+                video_urls.append(video_url)
+    
+    for link in soup.find_all('a', href=True):
+        href = link.get('href')
+        if href.endswith(('mp4', 'webm', 'avi', 'mov')):
+            video_urls.append(href)
+    
+    if video_urls:
+        for idx, video_url in enumerate(video_urls):
+            if not video_url.startswith('http'):
+                video_url = url + video_url
+            
+            try:
+                video_response = requests.get(video_url, stream=True)
+                if video_response.status_code == 200:
+                    video_filename = f"video_{idx+1}.mp4"
+                    with open(video_filename, 'wb') as f:
+                        for chunk in video_response.iter_content(chunk_size=1024):
+                            if chunk:
+                                f.write(chunk)
+                    print(f"video download completed: {video_filename}")
+                else:
+                    print(f"video download falied: {video_url}")
+            except requests.exceptions.RequestException as e:
+                print(f"error during video downloading: {video_url} - {e}")
+    else:
+        print(f"No video file in the website")
 
 if __name__ == '__main__':
     main()
